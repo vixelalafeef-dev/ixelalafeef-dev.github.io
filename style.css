@@ -236,7 +236,7 @@ button {
 }
 
 
-/* NAV ACTIONS */
+/* NAV ACTIONS & LANGUAGE SELECTOR */
 
 .nav-actions {
 
@@ -247,27 +247,38 @@ button {
     gap: 12px;
 }
 
-
-.language-btn {
-
-    width: 42px;
-    height: 34px;
+.language-select {
 
     background: transparent;
 
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
     color: var(--white);
 
+    padding: 5px 10px;
+
+    font-size: 12px;
+
+    font-family: inherit;
+
     cursor: pointer;
 
-    font-size: 11px;
+    border-radius: 2px;
 
     transition: var(--transition);
+
+    outline: none;
 }
 
+.language-select option {
 
-.language-btn:hover {
+    background: var(--navy);
+
+    color: var(--white);
+}
+
+.language-select:hover,
+.language-select:focus {
 
     border-color: var(--gold);
 
@@ -440,10 +451,6 @@ button {
 
 
 .hero-content > p {
-
-    direction: ltr;
-
-    text-align: right;
 
     color: #9eafbf;
 
@@ -649,8 +656,6 @@ button {
 
 .hero-card p {
 
-    direction: ltr;
-
     color: #aebdca;
 
     font-family: "Playfair Display", serif;
@@ -679,7 +684,7 @@ button {
 
     gap: 22px;
 
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 
@@ -706,8 +711,6 @@ button {
     font-size: 11px;
 
     letter-spacing: 3px;
-
-    direction: ltr;
 
     margin-bottom: 8px;
 }
@@ -950,7 +953,7 @@ button {
 
 
 /* =========================================
-   RESEARCH
+   RESEARCH & PDF DOWNLOAD
 ========================================= */
 
 .research {
@@ -958,13 +961,64 @@ button {
     background: var(--cream);
 }
 
+.pdf-download-wrapper {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.pdf-download-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 16px 32px;
+
+    background: var(--navy);
+
+    color: var(--gold-light);
+
+    border: 1px solid var(--gold);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border-radius: 4px;
+
+    transition: var(--transition);
+
+    box-shadow: 0 4px 15px rgba(7, 26, 47, 0.1);
+}
+
+.pdf-download-btn:hover {
+
+    background: var(--gold);
+
+    color: var(--navy);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(201, 164, 92, 0.3);
+}
+
+.pdf-icon {
+
+    font-size: 18px;
+}
+
 
 .research-grid {
 
     display: grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
 }
@@ -976,7 +1030,13 @@ button {
 
     padding: 40px;
 
-    min-height: 250px;
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 280px;
 
     border-top: 2px solid var(--gold);
 
@@ -993,13 +1053,15 @@ button {
 }
 
 
-.research-card > span {
+.paper-number {
 
     color: var(--gold);
 
     font-family: "Playfair Display", serif;
 
-    font-size: 13px;
+    font-size: 14px;
+
+    font-weight: bold;
 }
 
 
@@ -1009,9 +1071,11 @@ button {
 
     font-family: "Playfair Display", "Cairo", serif;
 
-    font-size: 25px;
+    font-size: 20px;
 
-    margin: 25px 0 12px;
+    line-height: 1.5;
+
+    margin: 18px 0 12px;
 }
 
 
@@ -1021,7 +1085,29 @@ button {
 
     font-size: 13px;
 
-    line-height: 2;
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.research-link {
+
+    color: var(--gold);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+
+    display: inline-block;
+}
+
+.research-link:hover {
+
+    color: var(--navy);
+
+    transform: translateX(-4px);
 }
 
 
@@ -1195,8 +1281,6 @@ button {
 
 .contact-box p {
 
-    direction: ltr;
-
     color: #91a5b7;
 
     font-family: "Playfair Display", serif;
@@ -1332,6 +1416,43 @@ button {
 
 
 /* =========================================
+   LTR STYLES OVERRIDE (English / Chinese)
+========================================= */
+
+html[dir="ltr"] .eyebrow {
+
+    border-right: none;
+
+    border-left: 2px solid var(--gold);
+
+    padding-right: 0;
+
+    padding-left: 12px;
+}
+
+html[dir="ltr"] .about-text {
+
+    padding-right: 0;
+
+    padding-left: 30px;
+
+    border-right: none;
+
+    border-left: 1px solid var(--border);
+}
+
+html[dir="ltr"] .footer-right {
+
+    align-items: flex-start;
+}
+
+html[dir="ltr"] .research-link:hover {
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
    MOBILE
 ========================================= */
 
@@ -1342,6 +1463,7 @@ button {
         position: fixed;
 
         top: 82px;
+
         right: -100%;
 
         width: 280px;
@@ -1361,10 +1483,21 @@ button {
         transition: var(--transition);
     }
 
+    html[dir="ltr"] .nav {
+
+        right: auto;
+
+        left: -100%;
+    }
 
     .nav.open {
 
         right: 0;
+    }
+
+    html[dir="ltr"] .nav.open {
+
+        left: 0;
     }
 
 
@@ -1409,6 +1542,13 @@ button {
         padding-right: 0;
 
         border-right: 0;
+    }
+
+    html[dir="ltr"] .about-text {
+
+        padding-left: 0;
+
+        border-left: 0;
     }
 
 
