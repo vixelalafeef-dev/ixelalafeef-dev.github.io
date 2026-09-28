@@ -68,10 +68,11 @@ select {
 
 .container {
 
-    width: min(
-        calc(100% - 48px),
-        var(--container)
-    );
+    width:
+        min(
+            calc(100% - 48px),
+            var(--container)
+        );
 
     margin-inline: auto;
 }
@@ -92,15 +93,17 @@ select {
 
     z-index: 1000;
 
-    background: rgba(
-        15,
-        31,
-        51,
-        0.96
-    );
+    background:
+        rgba(
+            15,
+            31,
+            51,
+            0.96
+        );
 
     border-bottom:
-        1px solid rgba(
+        1px solid
+        rgba(
             255,
             255,
             255,
@@ -124,7 +127,12 @@ select {
 
     box-shadow:
         0 10px 35px
-        rgba(0, 0, 0, 0.14);
+        rgba(
+            0,
+            0,
+            0,
+            0.14
+        );
 }
 
 .header-inner {
@@ -170,9 +178,11 @@ select {
     align-items: center;
     justify-content: center;
 
-    background: var(--gold);
+    background:
+        var(--gold);
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-family:
         "Playfair Display",
@@ -266,7 +276,8 @@ select {
 
     height: 2px;
 
-    background: var(--gold);
+    background:
+        var(--gold);
 
     transition:
         width 0.3s ease;
@@ -299,7 +310,9 @@ select {
 }
 
 
-/* LANGUAGE */
+/* =========================================================
+   LANGUAGE SELECT
+   ========================================================= */
 
 .language-select {
 
@@ -357,9 +370,11 @@ select {
 
 .language-select option {
 
-    color: var(--text);
+    color:
+        var(--text);
 
-    background: white;
+    background:
+        white;
 }
 
 
@@ -403,19 +418,22 @@ select {
         opacity 0.3s ease;
 }
 
-.menu-btn.open span:nth-child(1) {
+.menu-btn.open
+span:nth-child(1) {
 
     transform:
         translateY(7px)
         rotate(45deg);
 }
 
-.menu-btn.open span:nth-child(2) {
+.menu-btn.open
+span:nth-child(2) {
 
     opacity: 0;
 }
 
-.menu-btn.open span:nth-child(3) {
+.menu-btn.open
+span:nth-child(3) {
 
     transform:
         translateY(-7px)
@@ -546,7 +564,8 @@ select {
 
     height: 1px;
 
-    background: var(--gold);
+    background:
+        var(--gold);
 }
 
 .hero-eyebrow p {
@@ -579,7 +598,8 @@ select {
 
     display: block;
 
-    color: var(--gold);
+    color:
+        var(--gold);
 
     font-family:
         "Playfair Display",
@@ -681,9 +701,11 @@ select {
 
 .btn-primary {
 
-    background: var(--gold);
+    background:
+        var(--gold);
 
-    color: var(--navy);
+    color:
+        var(--navy);
 }
 
 .btn-primary:hover {
@@ -703,7 +725,8 @@ select {
             0.30
         );
 
-    color: white;
+    color:
+        white;
 }
 
 .btn-outline:hover {
@@ -817,7 +840,8 @@ select {
             0.45
         );
 
-    color: var(--gold);
+    color:
+        var(--gold);
 
     font-family:
         "Playfair Display",
@@ -844,7 +868,8 @@ select {
 
 .hero-card-info span {
 
-    color: var(--gold);
+    color:
+        var(--gold);
 
     font-size: 11px;
 
@@ -931,7 +956,8 @@ select {
 
 .section-label {
 
-    color: var(--gold);
+    color:
+        var(--gold);
 
     font-family:
         "Playfair Display",
@@ -963,7 +989,8 @@ select {
 
 .section-heading h2 {
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size:
         clamp(
@@ -1038,7 +1065,8 @@ select {
 
 .info-label {
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
     font-size: 11px;
 
@@ -1047,7 +1075,8 @@ select {
 
 .info-item strong {
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 15px;
 }
@@ -1075,7 +1104,8 @@ select {
 
     min-height: 270px;
 
-    background: white;
+    background:
+        white;
 
     border:
         1px solid
@@ -1122,14 +1152,16 @@ select {
 
     margin-bottom: 12px;
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 20px;
 }
 
 .academic-card p {
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
     font-size: 13px;
 
@@ -1138,68 +1170,14 @@ select {
 
 
 /* =========================================================
-   ACADEMIC PROFILES
+   RESEARCH PROFILES
    ========================================================= */
 
-.academic-profiles {
+.research-section {
 
-    padding-top: 20px;
+    background:
+        #ffffff;
 }
-
-.profiles-heading {
-
-    max-width: 780px;
-
-    margin-bottom: 42px;
-}
-
-.profiles-heading .section-label {
-
-    display: inline-block;
-
-    margin-bottom: 12px;
-
-    color: var(--gold);
-
-    letter-spacing: 3px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-}
-
-.profiles-heading h2 {
-
-    margin:
-        0 0 14px;
-
-    color: var(--navy);
-
-    font-size:
-        clamp(
-            30px,
-            4vw,
-            44px
-        );
-
-    line-height: 1.2;
-}
-
-.profiles-heading p {
-
-    margin: 0;
-
-    color: var(--muted);
-
-    line-height: 1.9;
-
-    font-size: 15px;
-}
-
-
-/* =========================================================
-   PROFILE GRID
-   ========================================================= */
 
 .profiles-grid {
 
@@ -1226,11 +1204,12 @@ select {
 
     gap: 20px;
 
-    min-height: 185px;
+    min-height: 190px;
 
     padding: 30px;
 
-    background: #ffffff;
+    background:
+        #ffffff;
 
     border:
         1px solid
@@ -1243,7 +1222,8 @@ select {
 
     text-decoration: none;
 
-    color: var(--text);
+    color:
+        var(--text);
 
     overflow: hidden;
 
@@ -1387,7 +1367,8 @@ select {
 
     border-radius: 14px;
 
-    color: #ffffff;
+    color:
+        #ffffff;
 
     font-family:
         "Playfair Display",
@@ -1411,7 +1392,8 @@ select {
         box-shadow 0.45s ease;
 }
 
-.profile-card:hover .profile-icon {
+.profile-card:hover
+.profile-icon {
 
     transform:
         translateY(-4px)
@@ -1428,15 +1410,17 @@ select {
 }
 
 
-/* Platform colors */
+/* =========================================================
+   PLATFORM COLORS
+   ========================================================= */
 
-.scholar-icon {
+.researchgate-icon {
 
     background:
         linear-gradient(
             135deg,
-            #4285f4,
-            #174ea6
+            #08b795,
+            #007e6a
         );
 }
 
@@ -1450,13 +1434,13 @@ select {
         );
 }
 
-.researchgate-icon {
+.scholar-icon {
 
     background:
         linear-gradient(
             135deg,
-            #08b795,
-            #007e6a
+            #4285f4,
+            #174ea6
         );
 }
 
@@ -1491,7 +1475,8 @@ select {
 
     margin: 0;
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 19px;
 
@@ -1504,7 +1489,8 @@ select {
 .profile-card:hover
 .profile-title-row h3 {
 
-    color: #ffffff;
+    color:
+        #ffffff;
 }
 
 
@@ -1517,7 +1503,6 @@ select {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     width: 31px;
@@ -1534,7 +1519,8 @@ select {
 
     border-radius: 50%;
 
-    color: var(--gold);
+    color:
+        var(--gold);
 
     font-size: 15px;
 
@@ -1562,7 +1548,7 @@ select {
 
 
 /* =========================================================
-   PROFILE DESCRIPTION
+   DESCRIPTION
    ========================================================= */
 
 .profile-content p {
@@ -1570,11 +1556,14 @@ select {
     margin:
         11px 0 18px;
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
-    font-size: 13.5px;
+    font-size:
+        13.5px;
 
-    line-height: 1.85;
+    line-height:
+        1.85;
 
     transition:
         color 0.35s ease;
@@ -1594,12 +1583,10 @@ select {
 
 
 /* =========================================================
-   VISIT LINK
+   VISIT PROFILE
    ========================================================= */
 
 .profile-link {
-
-    position: relative;
 
     display: inline-flex;
 
@@ -1607,11 +1594,14 @@ select {
 
     gap: 7px;
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
-    font-size: 13px;
+    font-size:
+        13px;
 
-    font-weight: 700;
+    font-weight:
+        700;
 
     transition:
         color 0.35s ease;
@@ -1619,9 +1609,11 @@ select {
 
 .profile-link::after {
 
-    content: "→";
+    content:
+        "→";
 
-    font-size: 16px;
+    font-size:
+        16px;
 
     transition:
         transform 0.35s ease;
@@ -1647,7 +1639,8 @@ select {
 html[dir="rtl"]
 .profile-link::after {
 
-    content: "←";
+    content:
+        "←";
 }
 
 html[dir="rtl"]
@@ -1660,22 +1653,14 @@ html[dir="rtl"]
 
 
 /* =========================================================
-   ACCESSIBILITY
-   ========================================================= */
-
-.profile-card:focus-visible {
-
-    outline:
-        2px solid
-        var(--gold);
-
-    outline-offset: 5px;
-}
-
-
-/* =========================================================
    CONTACT
    ========================================================= */
+
+.contact-section {
+
+    background:
+        var(--cream);
+}
 
 .contact-grid {
 
@@ -1697,7 +1682,8 @@ html[dir="rtl"]
 
     padding: 28px;
 
-    background: white;
+    background:
+        white;
 
     border:
         1px solid
@@ -1729,9 +1715,11 @@ html[dir="rtl"]
     align-items: center;
     justify-content: center;
 
-    background: var(--navy);
+    background:
+        var(--navy);
 
-    color: var(--gold);
+    color:
+        var(--gold);
 
     font-size: 18px;
 }
@@ -1742,7 +1730,8 @@ html[dir="rtl"]
 
     margin-top: 4px;
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     text-decoration: none;
 
@@ -1754,7 +1743,8 @@ html[dir="rtl"]
 
 .contact-item a:hover {
 
-    color: var(--gold);
+    color:
+        var(--gold);
 }
 
 
@@ -1770,7 +1760,8 @@ html[dir="rtl"]
     background:
         var(--navy);
 
-    color: white;
+    color:
+        white;
 }
 
 .footer-inner {
@@ -1858,11 +1849,13 @@ html[dir="rtl"]
     color:
         var(--gold);
 
-    cursor: pointer;
+    cursor:
+        pointer;
 
     opacity: 0;
 
-    visibility: hidden;
+    visibility:
+        hidden;
 
     transform:
         translateY(15px);
@@ -1876,9 +1869,11 @@ html[dir="rtl"]
 
 .back-to-top.show {
 
-    opacity: 1;
+    opacity:
+        1;
 
-    visibility: visible;
+    visibility:
+        visible;
 
     transform:
         translateY(0);
@@ -1895,7 +1890,7 @@ html[dir="rtl"]
 
 
 /* =========================================================
-   REVEAL ANIMATION
+   REVEAL
    ========================================================= */
 
 .academic-card,
@@ -1934,13 +1929,8 @@ html[dir="rtl"]
 
 html[dir="ltr"] {
 
-    text-align: left;
-}
-
-html[dir="ltr"]
-.hero-eyebrow {
-
-    flex-direction: row;
+    text-align:
+        left;
 }
 
 html[dir="ltr"]
@@ -1950,20 +1940,9 @@ html[dir="ltr"]
     right: auto;
 }
 
-html[dir="ltr"]
-.profile-card:hover
-.external-icon {
-
-    transform:
-        translate(
-            4px,
-            -4px
-        );
-}
-
 
 /* =========================================================
-   RESPONSIVE — 1000px
+   RESPONSIVE
    ========================================================= */
 
 @media (max-width: 1000px) {
@@ -1976,23 +1955,26 @@ html[dir="ltr"]
 
         right: -100%;
 
-        width: min(
-            320px,
-            85vw
-        );
+        width:
+            min(
+                320px,
+                85vw
+            );
 
         height:
             calc(
                 100vh - 82px
             );
 
-        padding: 35px 25px;
+        padding:
+            35px 25px;
 
         display: flex;
 
         flex-direction: column;
 
-        align-items: flex-start;
+        align-items:
+            flex-start;
 
         gap: 25px;
 
@@ -2014,14 +1996,17 @@ html[dir="ltr"]
 
     .nav.open {
 
-        right: 0;
+        right:
+            0;
     }
 
     html[dir="ltr"] .nav {
 
-        right: auto;
+        right:
+            auto;
 
-        left: -100%;
+        left:
+            -100%;
 
         transition:
             left 0.35s ease;
@@ -2029,52 +2014,64 @@ html[dir="ltr"]
 
     html[dir="ltr"] .nav.open {
 
-        left: 0;
+        left:
+            0;
     }
 
     .nav-link {
 
-        font-size: 15px;
+        font-size:
+            15px;
     }
 
     .menu-btn {
 
-        display: flex;
+        display:
+            flex;
     }
 
 
     .hero-container {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
-        gap: 55px;
+        gap:
+            55px;
 
-        padding-top: 110px;
+        padding-top:
+            110px;
 
-        padding-bottom: 70px;
+        padding-bottom:
+            70px;
     }
 
     .hero {
 
-        min-height: auto;
+        min-height:
+            auto;
     }
 
     .hero-card {
 
-        width: min(
-            100%,
-            500px
-        );
+        width:
+            min(
+                100%,
+                500px
+            );
 
-        min-height: 350px;
+        min-height:
+            350px;
     }
 
 
     .about-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
-        gap: 45px;
+        gap:
+            45px;
     }
 
 
@@ -2090,7 +2087,8 @@ html[dir="ltr"]
         grid-template-columns:
             1fr;
 
-        max-width: 720px;
+        max-width:
+            720px;
     }
 
 
@@ -2102,10 +2100,6 @@ html[dir="ltr"]
 
 }
 
-
-/* =========================================================
-   RESPONSIVE — 600px
-   ========================================================= */
 
 @media (max-width: 600px) {
 
@@ -2121,12 +2115,14 @@ html[dir="ltr"]
 
     .header-inner {
 
-        min-height: 72px;
+        min-height:
+            72px;
     }
 
     .nav {
 
-        top: 72px;
+        top:
+            72px;
 
         height:
             calc(
@@ -2137,72 +2133,91 @@ html[dir="ltr"]
 
     .logo-text span {
 
-        display: none;
+        display:
+            none;
     }
 
 
     .logo-mark {
 
-        width: 40px;
-        height: 40px;
+        width:
+            40px;
+
+        height:
+            40px;
     }
 
 
     .language-select {
 
-        max-width: 100px;
+        max-width:
+            100px;
 
-        font-size: 11px;
+        font-size:
+            11px;
     }
 
 
     .hero-container {
 
-        padding-top: 105px;
+        padding-top:
+            105px;
     }
 
     .hero h1 {
 
-        font-size: 39px;
+        font-size:
+            39px;
     }
 
     .hero h2 {
 
-        font-size: 18px;
+        font-size:
+            18px;
     }
 
     .hero-description {
 
-        font-size: 14px;
+        font-size:
+            14px;
     }
 
 
     .hero-buttons {
 
-        flex-direction: column;
+        flex-direction:
+            column;
 
-        align-items: stretch;
+        align-items:
+            stretch;
     }
 
     .btn {
 
-        width: 100%;
+        width:
+            100%;
     }
 
 
     .hero-card {
 
-        padding: 25px;
+        padding:
+            25px;
 
-        min-height: 320px;
+        min-height:
+            320px;
     }
 
     .hero-card-monogram {
 
-        width: 115px;
-        height: 115px;
+        width:
+            115px;
 
-        font-size: 43px;
+        height:
+            115px;
+
+        font-size:
+            43px;
     }
 
 
@@ -2215,105 +2230,124 @@ html[dir="ltr"]
 
     .section-heading {
 
-        margin-bottom: 38px;
+        margin-bottom:
+            38px;
     }
 
 
     .about-main .lead {
 
-        font-size: 17px;
+        font-size:
+            17px;
 
-        line-height: 1.95;
+        line-height:
+            1.95;
     }
 
 
     .academic-card {
 
-        padding: 27px;
+        padding:
+            27px;
 
-        min-height: auto;
+        min-height:
+            auto;
     }
 
     .academic-number {
 
-        margin-bottom: 35px;
-    }
-
-
-    .profiles-heading {
-
-        margin-bottom: 30px;
-    }
-
-    .profiles-heading h2 {
-
-        font-size: 30px;
+        margin-bottom:
+            35px;
     }
 
 
     .profiles-grid {
 
-        gap: 16px;
+        gap:
+            16px;
     }
 
 
     .profile-card {
 
-        padding: 23px;
+        padding:
+            23px;
 
-        gap: 16px;
+        gap:
+            16px;
     }
+
 
     .profile-icon {
 
-        width: 55px;
-        height: 55px;
+        width:
+            55px;
 
-        min-width: 55px;
+        height:
+            55px;
 
-        border-radius: 12px;
+        min-width:
+            55px;
 
-        font-size: 18px;
+        border-radius:
+            12px;
+
+        font-size:
+            18px;
     }
+
 
     .profile-title-row h3 {
 
-        font-size: 17px;
+        font-size:
+            17px;
     }
+
 
     .profile-content p {
 
-        font-size: 13px;
+        font-size:
+            13px;
     }
+
 
     .external-icon {
 
-        width: 27px;
-        height: 27px;
+        width:
+            27px;
 
-        font-size: 13px;
+        height:
+            27px;
+
+        font-size:
+            13px;
     }
 
 
     .contact-item {
 
-        padding: 22px;
+        padding:
+            22px;
     }
 
 
     .footer-inner {
 
-        flex-direction: column;
+        flex-direction:
+            column;
 
-        align-items: flex-start;
+        align-items:
+            flex-start;
     }
 
 
     .back-to-top {
 
-        right: 16px;
+        right:
+            16px;
 
-        bottom: 16px;
+        bottom:
+            16px;
     }
 
 }
@@ -2329,15 +2363,13 @@ html[dir="ltr"]
     *::before,
     *::after {
 
-        scroll-behavior: auto !important;
+        scroll-behavior:
+            auto !important;
 
         transition-duration:
             0.01ms !important;
 
         animation-duration:
             0.01ms !important;
-
-        animation-iteration-count:
-            1 !important;
     }
 }
