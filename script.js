@@ -1,13 +1,12 @@
-/* =========================================
-   TRANSLATIONS DICTIONARY
-   AR / EN / ZH
-========================================= */
+/* =========================================================
+   TRANSLATIONS
+   ========================================================= */
 
 const translations = {
 
-    /* =====================================
+    /* =========================
        ARABIC
-    ===================================== */
+       ========================= */
 
     ar: {
 
@@ -20,18 +19,17 @@ const translations = {
         logo_title:
             "Professor of Finance",
 
-
         nav_home:
             "الرئيسية",
 
         nav_about:
-            "نبذة",
+            "نبذة أكاديمية",
 
         nav_academic:
             "المسيرة الأكاديمية",
 
         nav_research:
-            "الأبحاث",
+            "الملفات الأكاديمية",
 
         nav_contact:
             "التواصل",
@@ -42,71 +40,55 @@ const translations = {
         hero_eyebrow:
             "جامعة جرش — الأردن",
 
-        hero_title_p1:
-            "الأستاذ الدكتور",
+        hero_title:
+            'الأستاذ الدكتور <span>محمد عبد المحسن العفيف</span>',
 
-        hero_title_p2:
-            "محمد عبد المحسن العفيف",
-
-        hero_subtitle:
+        hero_position:
             "أستاذ العلوم المالية والمصرفية",
 
-        hero_desc:
+        hero_description:
             "Professor of Finance and Banking<br>Jerash University — Jordan",
 
-        hero_btn_about:
-            "تعرف على الأستاذ",
+        hero_about_btn:
+            "نبذة أكاديمية",
 
-        hero_btn_contact:
-            "تواصل معي",
+        hero_contact_btn:
+            "التواصل",
 
-        hero_card_prof:
+        hero_card_professor:
             "Professor",
 
-        hero_card_name:
-            "Mohammad<br>Al-Afeef",
-
-        hero_card_dept:
+        hero_card_specialization:
             "Finance & Banking",
-
-        hero_card_univ:
-            "Jerash University",
 
 
         /* ABOUT */
 
         about_label:
-            "PROFILE",
+            "ABOUT",
 
-        about_heading:
+        about_title:
             "نبذة أكاديمية",
 
-        about_lead:
-            "الأستاذ الدكتور محمد عبد المحسن العفيف أستاذ في العلوم المالية والمصرفية في جامعة جرش — المملكة الأردنية الهاشمية.",
+        about_description:
+            "الأستاذ الدكتور محمد عبد المحسن العفيف، أستاذ العلوم المالية والمصرفية في جامعة جرش في المملكة الأردنية الهاشمية، يهتم بالتدريس والبحث العلمي في مجالات العلوم المالية والمصرفية.",
 
-        about_p1:
-            "يتركز اهتمامه الأكاديمي والمهني في مجالات العلوم المالية والمصرفية، والتعليم الجامعي، والبحث العلمي في المجالات ذات الصلة.",
+        rank_label:
+            "الرتبة الأكاديمية",
 
-        about_p2:
-            "يهدف هذا الموقع إلى توفير مساحة أكاديمية للتعريف بالمسيرة العلمية والبحثية والتواصل الأكاديمي والمهني.",
+        rank_value:
+            "أستاذ دكتور",
 
-
-        info_01_label:
-            "المنصب الأكاديمي",
-
-        info_01_val:
-            "أستاذ العلوم المالية والمصرفية",
-
-        info_02_label:
+        university_label:
             "الجامعة",
 
-        info_02_val:
-            "جامعة جرش — الأردن",
+        university_value:
+            "جامعة جرش",
 
-        info_03_label:
+        specialization_label:
             "التخصص",
 
-        info_03_val:
+        specialization_value:
             "العلوم المالية والمصرفية",
 
 
@@ -115,59 +97,26 @@ const translations = {
         academic_label:
             "ACADEMIC JOURNEY",
 
-        academic_heading:
+        academic_title:
             "المسيرة الأكاديمية",
 
-        academic_sub:
-            "معلومات أكاديمية ومهنية",
+        academic_card_1_title:
+            "أستاذية العلوم المالية والمصرفية",
 
-        acad_card_1_title:
-            "الأستاذية",
+        academic_card_1_desc:
+            "مسيرة أكاديمية في مجال العلوم المالية والمصرفية والتعليم الجامعي.",
 
-        acad_card_1_desc:
-            "أستاذ العلوم المالية والمصرفية في جامعة جرش — الأردن.",
+        academic_card_2_title:
+            "التخصص الأكاديمي",
 
-        acad_card_2_title:
-            "التخصص",
+        academic_card_2_desc:
+            "التخصص في مجالات العلوم المالية والمصرفية والموضوعات المرتبطة بها.",
 
-        acad_card_2_desc:
-            "العلوم المالية والمصرفية ومجالاتها الأكاديمية والبحثية.",
-
-        acad_card_3_title:
+        academic_card_3_title:
             "البحث العلمي",
 
-        acad_card_3_desc:
-            "الاهتمام بالبحث العلمي والدراسات المرتبطة بالقطاع المالي والمصرفي.",
-
-
-        /* RESEARCH */
-
-        research_label:
-            "RESEARCH",
-
-        research_heading:
-            "الاهتمامات البحثية",
-
-
-        research_card_1_title:
-            "العلوم المالية",
-
-        research_card_1_desc:
-            "الدراسات والمفاهيم المتعلقة بالتمويل والأسواق المالية.",
-
-
-        research_card_2_title:
-            "العلوم المصرفية",
-
-        research_card_2_desc:
-            "الموضوعات والدراسات المتعلقة بالمؤسسات والعمليات المصرفية.",
-
-
-        research_card_3_title:
-            "التعليم الجامعي",
-
-        research_card_3_desc:
-            "التعليم الأكاديمي وتطوير المعرفة في المجالات المالية والمصرفية.",
+        academic_card_3_desc:
+            "الاهتمام بالبحث العلمي والنشر الأكاديمي في المجالات المالية والمصرفية.",
 
 
         /* ACADEMIC PROFILES */
@@ -179,28 +128,19 @@ const translations = {
             "الملفات الأكاديمية",
 
         profiles_desc:
-            "للاطلاع على المنشورات العلمية والإنتاج البحثي والاستشهادات الأكاديمية.",
-
+            "الوصول إلى الملفات والصفحات الأكاديمية الرسمية.",
 
         scholar_desc:
-            "المنشورات العلمية والاستشهادات والملف الأكاديمي.",
-
-        scholar_link:
-            "عرض الملف الأكاديمي",
-
+            "الملف الأكاديمي والأبحاث والاستشهادات العلمية.",
 
         scopus_desc:
-            "ملف الباحث والمنشورات ومؤشرات الاستشهاد.",
-
-        scopus_link:
-            "عرض ملف الباحث",
-
+            "الملف البحثي ومعرّف الباحث في قاعدة Scopus.",
 
         researchgate_desc:
-            "الأبحاث والمنشورات والتواصل مع المجتمع الأكاديمي.",
+            "الأبحاث والمنشورات والتعاونات العلمية.",
 
-        researchgate_link:
-            "عرض الملف البحثي",
+        visit_profile:
+            "زيارة الملف",
 
 
         /* CONTACT */
@@ -208,52 +148,38 @@ const translations = {
         contact_label:
             "CONTACT",
 
-        contact_heading:
-            "للتواصل الأكاديمي",
-
-        contact_desc:
-            "للتواصل الأكاديمي والمهني، يمكن استخدام بيانات الاتصال التالية.",
+        contact_title:
+            "التواصل الأكاديمي",
 
         phone_label:
             "الهاتف",
 
-        univ_email_label:
+        university_email_label:
             "البريد الجامعي",
 
-        pers_email_label:
+        personal_email_label:
             "البريد الإلكتروني",
-
-
-        contact_box_title:
-            "Mohammad<br>Al-Afeef",
-
-        contact_box_prof:
-            "Professor of Finance<br>Jerash University",
-
-        contact_box_country:
-            "Jordan",
 
 
         /* FOOTER */
 
-        footer_name:
-            "د. محمد عبد المحسن العفيف",
+        footer_role:
+            "Professor of Finance and Banking",
 
-        footer_univ:
-            "Jerash University — Jordan"
+        footer_rights:
+            "جميع الحقوق محفوظة"
 
     },
 
 
-
-    /* =====================================
+    /* =========================
        ENGLISH
-    ===================================== */
+       ========================= */
 
     en: {
 
         page_title:
-            "Prof. Dr. Mohammad Al-Afeef | Professor of Finance & Banking",
+            "Professor Mohammad Abdul-Mohsen Al-Afeef | Professor of Finance and Banking",
 
         logo_name:
             "Dr. Mohammad Al-Afeef",
@@ -261,147 +187,107 @@ const translations = {
         logo_title:
             "Professor of Finance",
 
-
         nav_home:
             "Home",
 
         nav_about:
-            "About",
+            "Academic Profile",
 
         nav_academic:
             "Academic Journey",
 
         nav_research:
-            "Research",
+            "Academic Profiles",
 
         nav_contact:
             "Contact",
 
 
+        /* HERO */
+
         hero_eyebrow:
             "Jerash University — Jordan",
 
-        hero_title_p1:
-            "Prof. Dr.",
+        hero_title:
+            'Professor <span>Mohammad Abdul-Mohsen Al-Afeef</span>',
 
-        hero_title_p2:
-            "Mohammad Al-Afeef",
+        hero_position:
+            "Professor of Finance and Banking",
 
-        hero_subtitle:
-            "Professor of Finance & Banking",
-
-        hero_desc:
+        hero_description:
             "Professor of Finance and Banking<br>Jerash University — Jordan",
 
-        hero_btn_about:
-            "About Professor",
-
-        hero_btn_contact:
-            "Contact Me",
-
-        hero_card_prof:
-            "Professor",
-
-        hero_card_name:
-            "Mohammad<br>Al-Afeef",
-
-        hero_card_dept:
-            "Finance & Banking",
-
-        hero_card_univ:
-            "Jerash University",
-
-
-        about_label:
-            "PROFILE",
-
-        about_heading:
+        hero_about_btn:
             "Academic Profile",
 
-        about_lead:
-            "Prof. Dr. Mohammad Abdul-Mohsen Al-Afeef is a Professor of Finance and Banking at Jerash University — Hashemite Kingdom of Jordan.",
+        hero_contact_btn:
+            "Contact",
 
-        about_p1:
-            "His academic and professional focus centers on finance, banking, higher education, and scientific research in related fields.",
+        hero_card_professor:
+            "Professor",
 
-        about_p2:
-            "This website serves as an academic platform presenting his scientific contributions, research achievements, and professional communication.",
-
-
-        info_01_label:
-            "Academic Rank",
-
-        info_01_val:
-            "Professor of Finance & Banking",
-
-        info_02_label:
-            "University",
-
-        info_02_val:
-            "Jerash University — Jordan",
-
-        info_03_label:
-            "Specialization",
-
-        info_03_val:
+        hero_card_specialization:
             "Finance & Banking",
 
+
+        /* ABOUT */
+
+        about_label:
+            "ABOUT",
+
+        about_title:
+            "Academic Profile",
+
+        about_description:
+            "Professor Mohammad Abdul-Mohsen Al-Afeef is a Professor of Finance and Banking at Jerash University, Jordan, with academic interests in finance, banking, teaching and scientific research.",
+
+        rank_label:
+            "Academic Rank",
+
+        rank_value:
+            "Professor",
+
+        university_label:
+            "University",
+
+        university_value:
+            "Jerash University",
+
+        specialization_label:
+            "Specialization",
+
+        specialization_value:
+            "Finance and Banking",
+
+
+        /* ACADEMIC */
 
         academic_label:
             "ACADEMIC JOURNEY",
 
-        academic_heading:
+        academic_title:
             "Academic Journey",
 
-        academic_sub:
-            "Academic and Professional Highlights",
+        academic_card_1_title:
+            "Professor of Finance and Banking",
 
-        acad_card_1_title:
-            "Professorship",
+        academic_card_1_desc:
+            "An academic career focused on finance, banking and university education.",
 
-        acad_card_1_desc:
-            "Professor of Finance and Banking at Jerash University — Jordan.",
+        academic_card_2_title:
+            "Academic Specialization",
 
-        acad_card_2_title:
-            "Specialization",
+        academic_card_2_desc:
+            "Specialization in finance, banking and related academic fields.",
 
-        acad_card_2_desc:
-            "Finance and Banking, covering academic teaching and research disciplines.",
-
-        acad_card_3_title:
+        academic_card_3_title:
             "Scientific Research",
 
-        acad_card_3_desc:
-            "Dedicated to scientific research and analytical studies in banking and finance.",
+        academic_card_3_desc:
+            "Academic research and scholarly publication in finance and banking.",
 
 
-        research_label:
-            "RESEARCH",
-
-        research_heading:
-            "Research Interests",
-
-
-        research_card_1_title:
-            "Finance",
-
-        research_card_1_desc:
-            "Studies and concepts related to finance and financial markets.",
-
-
-        research_card_2_title:
-            "Banking",
-
-        research_card_2_desc:
-            "Topics and studies related to banking institutions and operations.",
-
-
-        research_card_3_title:
-            "Higher Education",
-
-        research_card_3_desc:
-            "Academic education and knowledge development in finance and banking.",
-
+        /* ACADEMIC PROFILES */
 
         profiles_label:
             "ACADEMIC PROFILES",
@@ -410,225 +296,166 @@ const translations = {
             "Academic Profiles",
 
         profiles_desc:
-            "Explore scientific publications, research output, and academic citations.",
-
+            "Access the official academic profiles and research pages.",
 
         scholar_desc:
-            "Scientific publications, citations, and academic profile.",
-
-        scholar_link:
-            "View Academic Profile",
-
+            "Academic profile, publications and citation records.",
 
         scopus_desc:
-            "Author profile, publications, and citation metrics.",
-
-        scopus_link:
-            "View Author Profile",
-
+            "Research profile and author identifier on Scopus.",
 
         researchgate_desc:
-            "Research papers, publications, and academic networking.",
+            "Research publications and academic collaborations.",
 
-        researchgate_link:
-            "View Research Profile",
+        visit_profile:
+            "Visit Profile",
 
+
+        /* CONTACT */
 
         contact_label:
             "CONTACT",
 
-        contact_heading:
+        contact_title:
             "Academic Contact",
-
-        contact_desc:
-            "For academic and professional inquiries, please use the contact information below.",
 
         phone_label:
             "Phone",
 
-        univ_email_label:
+        university_email_label:
             "University Email",
 
-        pers_email_label:
-            "Personal Email",
+        personal_email_label:
+            "Email",
 
 
-        contact_box_title:
-            "Mohammad<br>Al-Afeef",
+        /* FOOTER */
 
-        contact_box_prof:
-            "Professor of Finance<br>Jerash University",
+        footer_role:
+            "Professor of Finance and Banking",
 
-        contact_box_country:
-            "Jordan",
-
-
-        footer_name:
-            "Dr. Mohammad Abdul-Mohsen Al-Afeef",
-
-        footer_univ:
-            "Jerash University — Jordan"
+        footer_rights:
+            "All Rights Reserved"
 
     },
 
 
-
-    /* =====================================
+    /* =========================
        CHINESE
-    ===================================== */
+       ========================= */
 
     zh: {
 
         page_title:
-            "穆罕默德·阿菲夫教授 | 金融与银行学教授",
+            "穆罕默德·阿卜杜勒·穆赫辛·阿尔阿菲夫教授 | 金融与银行学教授",
 
         logo_name:
-            "穆罕默德·阿菲夫博士",
+            "穆罕默德·阿尔阿菲夫博士",
 
         logo_title:
             "金融学教授",
-
 
         nav_home:
             "首页",
 
         nav_about:
-            "简介",
+            "学术简介",
 
         nav_academic:
-            "学术历程",
+            "学术经历",
 
         nav_research:
-            "学术研究",
+            "学术档案",
 
         nav_contact:
             "联系方式",
 
 
+        /* HERO */
+
         hero_eyebrow:
             "杰拉什大学 — 约旦",
 
-        hero_title_p1:
-            "教授 / 博士",
+        hero_title:
+            '穆罕默德·阿卜杜勒·穆赫辛 <span>阿尔阿菲夫教授</span>',
 
-        hero_title_p2:
-            "穆罕默德·阿菲夫",
-
-        hero_subtitle:
+        hero_position:
             "金融与银行学教授",
 
-        hero_desc:
-            "金融与银行学教授<br>杰拉什大学 — 约旦",
+        hero_description:
+            "Professor of Finance and Banking<br>Jerash University — Jordan",
 
-        hero_btn_about:
-            "了解教授",
-
-        hero_btn_contact:
-            "联系我",
-
-        hero_card_prof:
-            "教授",
-
-        hero_card_name:
-            "Mohammad<br>Al-Afeef",
-
-        hero_card_dept:
-            "金融与银行学",
-
-        hero_card_univ:
-            "杰拉什大学",
-
-
-        about_label:
-            "PROFILE",
-
-        about_heading:
+        hero_about_btn:
             "学术简介",
 
-        about_lead:
-            "穆罕默德·阿卜杜勒-穆赫森·阿菲夫教授是约旦哈希姆王国杰拉什大学金融与银行学教授。",
+        hero_contact_btn:
+            "联系方式",
 
-        about_p1:
-            "他的学术与专业重点包括金融、银行、高等教育以及相关领域的科学研究。",
+        hero_card_professor:
+            "Professor",
 
-        about_p2:
-            "本网站旨在提供一个学术平台，展示其科研成果、学术历程及学术与专业交流方式。",
+        hero_card_specialization:
+            "Finance & Banking",
 
 
-        info_01_label:
+        /* ABOUT */
+
+        about_label:
+            "ABOUT",
+
+        about_title:
+            "学术简介",
+
+        about_description:
+            "穆罕默德·阿卜杜勒·穆赫辛·阿尔阿菲夫教授是约旦杰拉什大学金融与银行学教授，主要从事金融、银行、大学教学及科学研究。",
+
+        rank_label:
             "学术职称",
 
-        info_01_val:
-            "金融与银行学教授",
+        rank_value:
+            "教授",
 
-        info_02_label:
-            "所属大学",
+        university_label:
+            "大学",
 
-        info_02_val:
-            "杰拉什大学 — 约旦",
+        university_value:
+            "杰拉什大学",
 
-        info_03_label:
+        specialization_label:
             "专业领域",
 
-        info_03_val:
+        specialization_value:
             "金融与银行学",
 
+
+        /* ACADEMIC */
 
         academic_label:
             "ACADEMIC JOURNEY",
 
-        academic_heading:
-            "学术历程",
+        academic_title:
+            "学术经历",
 
-        academic_sub:
-            "学术与专业亮点",
+        academic_card_1_title:
+            "金融与银行学教授",
 
-        acad_card_1_title:
-            "教授职位",
+        academic_card_1_desc:
+            "专注于金融、银行和大学教育领域的学术工作。",
 
-        acad_card_1_desc:
-            "约旦杰拉什大学金融与银行学教授。",
+        academic_card_2_title:
+            "学术专业",
 
-        acad_card_2_title:
-            "专业方向",
+        academic_card_2_desc:
+            "专业领域涵盖金融、银行及相关学术领域。",
 
-        acad_card_2_desc:
-            "金融与银行学及其学术教学与研究领域。",
-
-        acad_card_3_title:
+        academic_card_3_title:
             "科学研究",
 
-        acad_card_3_desc:
-            "专注于金融与银行领域的学术研究与分析。",
+        academic_card_3_desc:
+            "从事金融与银行领域的科学研究和学术出版。",
 
 
-        research_label:
-            "RESEARCH",
-
-        research_heading:
-            "学术研究方向",
-
-
-        research_card_1_title:
-            "金融学",
-
-        research_card_1_desc:
-            "与金融及金融市场相关的研究和理论。",
-
-
-        research_card_2_title:
-            "银行学",
-
-        research_card_2_desc:
-            "与银行机构及银行业务相关的研究领域。",
-
-
-        research_card_3_title:
-            "高等教育",
-
-        research_card_3_desc:
-            "金融与银行领域的大学教育与知识发展。",
-
+        /* ACADEMIC PROFILES */
 
         profiles_label:
             "ACADEMIC PROFILES",
@@ -637,74 +464,55 @@ const translations = {
             "学术档案",
 
         profiles_desc:
-            "查看科学出版物、研究成果以及学术引用信息。",
-
+            "访问官方学术档案和研究页面。",
 
         scholar_desc:
-            "科学出版物、学术引用及研究者档案。",
-
-        scholar_link:
-            "查看学术档案",
-
+            "学术档案、研究成果和引用记录。",
 
         scopus_desc:
-            "研究者档案、出版物及引用指标。",
-
-        scopus_link:
-            "查看研究者档案",
-
+            "Scopus 中的研究档案和作者标识。",
 
         researchgate_desc:
-            "研究论文、学术出版物及学术交流。",
+            "研究成果、学术出版物和合作信息。",
 
-        researchgate_link:
-            "查看研究档案",
+        visit_profile:
+            "访问档案",
 
+
+        /* CONTACT */
 
         contact_label:
             "CONTACT",
 
-        contact_heading:
-            "学术联系",
-
-        contact_desc:
-            "如需学术交流或专业咨询，欢迎通过以下方式联系。",
+        contact_title:
+            "学术联系方式",
 
         phone_label:
             "电话",
 
-        univ_email_label:
+        university_email_label:
             "大学邮箱",
 
-        pers_email_label:
-            "个人邮箱",
+        personal_email_label:
+            "电子邮箱",
 
 
-        contact_box_title:
-            "Mohammad<br>Al-Afeef",
+        /* FOOTER */
 
-        contact_box_prof:
-            "金融学教授<br>杰拉什大学",
+        footer_role:
+            "Professor of Finance and Banking",
 
-        contact_box_country:
-            "约旦",
-
-
-        footer_name:
-            "穆罕默德·阿菲夫博士",
-
-        footer_univ:
-            "杰拉什大学 — 约旦"
+        footer_rights:
+            "版权所有"
 
     }
 
 };
 
 
-
-/* =========================================
+/* =========================================================
    CHANGE LANGUAGE
-========================================= */
+   ========================================================= */
 
 function changeLanguage(lang) {
 
@@ -712,63 +520,45 @@ function changeLanguage(lang) {
         lang = "ar";
     }
 
+    const dictionary = translations[lang];
 
     const html = document.documentElement;
-
 
     /* Language */
 
     html.lang = lang;
 
-
     /* Direction */
 
-    html.dir = lang === "ar"
-        ? "rtl"
-        : "ltr";
+    html.dir = lang === "ar" ? "rtl" : "ltr";
 
 
-    /* Page title */
-
-    if (translations[lang].page_title) {
-
-        document.title =
-            translations[lang].page_title;
-
-    }
-
-
-    /* Translation elements */
+    /* Text */
 
     document
         .querySelectorAll("[data-i18n]")
         .forEach(element => {
 
-            const key =
-                element.getAttribute("data-i18n");
+            const key = element.dataset.i18n;
 
             if (
-                translations[lang][key] !== undefined
+                dictionary[key] !== undefined
             ) {
 
                 element.innerHTML =
-                    translations[lang][key];
+                    dictionary[key];
 
             }
 
         });
 
 
-    /* Language selector */
+    /* Title */
 
-    const langSelect =
-        document.getElementById(
-            "languageSelect"
-        );
+    if (dictionary.page_title) {
 
-    if (langSelect) {
-
-        langSelect.value = lang;
+        document.title =
+            dictionary.page_title;
 
     }
 
@@ -776,48 +566,63 @@ function changeLanguage(lang) {
     /* Save */
 
     localStorage.setItem(
-        "preferred_language",
+        "preferredLanguage",
         lang
     );
+
+
+    /* Update select */
+
+    const languageSelect =
+        document.getElementById(
+            "languageSelect"
+        );
+
+    if (languageSelect) {
+
+        languageSelect.value = lang;
+
+    }
 
 }
 
 
-
-/* =========================================
-   HEADER SCROLL EFFECT
-========================================= */
+/* =========================================================
+   HEADER SCROLL
+   ========================================================= */
 
 const header =
     document.getElementById("header");
 
 
-window.addEventListener(
-    "scroll",
-    () => {
+function updateHeader() {
 
-        if (window.scrollY > 50) {
+    if (!header) return;
 
-            header.classList.add(
-                "scrolled"
-            );
+    if (window.scrollY > 40) {
 
-        } else {
+        header.classList.add("scrolled");
 
-            header.classList.remove(
-                "scrolled"
-            );
+    } else {
 
-        }
+        header.classList.remove("scrolled");
 
     }
+
+}
+
+window.addEventListener(
+    "scroll",
+    updateHeader,
+    { passive: true }
 );
 
+updateHeader();
 
 
-/* =========================================
+/* =========================================================
    MOBILE MENU
-========================================= */
+   ========================================================= */
 
 const menuBtn =
     document.getElementById("menuBtn");
@@ -832,234 +637,198 @@ if (menuBtn && nav) {
         "click",
         () => {
 
-            nav.classList.toggle("open");
+            const isOpen =
+                nav.classList.toggle("open");
+
+            menuBtn.classList.toggle(
+                "open",
+                isOpen
+            );
+
+            menuBtn.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
 
         }
     );
 
-}
 
+    /* Close menu after click */
 
-document
-    .querySelectorAll(".nav a")
-    .forEach(link => {
+    nav.querySelectorAll("a")
+        .forEach(link => {
 
-        link.addEventListener(
-            "click",
-            () => {
+            link.addEventListener(
+                "click",
+                () => {
 
-                nav.classList.remove("open");
+                    nav.classList.remove(
+                        "open"
+                    );
 
-            }
-        );
+                    menuBtn.classList.remove(
+                        "open"
+                    );
 
-    });
-
-
-
-/* =========================================
-   ACTIVE NAVIGATION
-========================================= */
-
-const sections =
-    document.querySelectorAll("section");
-
-const navLinks =
-    document.querySelectorAll(".nav a");
-
-
-function updateActiveNavigation() {
-
-    let current = "";
-
-
-    sections.forEach(section => {
-
-        const sectionTop =
-            section.offsetTop - 160;
-
-
-        if (
-            window.scrollY >= sectionTop
-        ) {
-
-            current =
-                section.getAttribute("id");
-
-        }
-
-    });
-
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-
-        if (
-            link.getAttribute("href") ===
-            "#" + current
-        ) {
-
-            link.classList.add("active");
-
-        }
-
-    });
-
-}
-
-
-window.addEventListener(
-    "scroll",
-    updateActiveNavigation
-);
-
-
-
-/* =========================================
-   BACK TO TOP
-========================================= */
-
-const backTop =
-    document.getElementById("backTop");
-
-
-window.addEventListener(
-    "scroll",
-    () => {
-
-        if (window.scrollY > 500) {
-
-            backTop.classList.add("show");
-
-        } else {
-
-            backTop.classList.remove("show");
-
-        }
-
-    }
-);
-
-
-backTop.addEventListener(
-    "click",
-    () => {
-
-        window.scrollTo({
-
-            top: 0,
-
-            behavior: "smooth"
-
-        });
-
-    }
-);
-
-
-
-/* =========================================
-   LANGUAGE SELECTOR
-========================================= */
-
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
-
-        /* Year */
-
-        const yearElem =
-            document.getElementById("year");
-
-
-        if (yearElem) {
-
-            yearElem.textContent =
-                new Date().getFullYear();
-
-        }
-
-
-        /* Language */
-
-        const langSelect =
-            document.getElementById(
-                "languageSelect"
-            );
-
-
-        if (langSelect) {
-
-            langSelect.addEventListener(
-                "change",
-                event => {
-
-                    changeLanguage(
-                        event.target.value
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
                     );
 
                 }
             );
 
-        }
+        });
+
+}
 
 
-        /* Saved language */
+/* =========================================================
+   ACTIVE NAVIGATION
+   ========================================================= */
 
-        const savedLang =
-            localStorage.getItem(
-                "preferred_language"
-            ) || "ar";
-
-
-        changeLanguage(savedLang);
-
-
-        /* Active nav */
-
-        updateActiveNavigation();
-
-    }
-);
-
-
-
-/* =========================================
-   REVEAL ANIMATION
-========================================= */
-
-const revealElements =
+const sections =
     document.querySelectorAll(
-        `
-        .academic-card,
-        .research-card,
-        .profile-card,
-        .info-item,
-        .contact-item
-        `
+        "main section[id]"
+    );
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-link"
     );
 
 
-const observer =
-    new IntersectionObserver(
+function updateActiveNav() {
 
+    const scrollPosition =
+        window.scrollY + 180;
+
+
+    sections.forEach(section => {
+
+        const top =
+            section.offsetTop;
+
+        const height =
+            section.offsetHeight;
+
+        const id =
+            section.getAttribute("id");
+
+
+        if (
+            scrollPosition >= top &&
+            scrollPosition < top + height
+        ) {
+
+            navLinks.forEach(link => {
+
+                link.classList.remove(
+                    "active"
+                );
+
+                if (
+                    link.dataset.section === id
+                ) {
+
+                    link.classList.add(
+                        "active"
+                    );
+
+                }
+
+            });
+
+        }
+
+    });
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    updateActiveNav,
+    { passive: true }
+);
+
+updateActiveNav();
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+const backToTop =
+    document.getElementById(
+        "backToTop"
+    );
+
+
+if (backToTop) {
+
+    window.addEventListener(
+        "scroll",
+        () => {
+
+            if (window.scrollY > 500) {
+
+                backToTop.classList.add(
+                    "show"
+                );
+
+            } else {
+
+                backToTop.classList.remove(
+                    "show"
+                );
+
+            }
+
+        },
+        { passive: true }
+    );
+
+
+    backToTop.addEventListener(
+        "click",
+        () => {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
+
+const revealElements =
+    document.querySelectorAll(
+        ".academic-card, .info-item, .contact-item, .profile-card"
+    );
+
+
+const revealObserver =
+    new IntersectionObserver(
         entries => {
 
             entries.forEach(entry => {
 
-                if (
-                    entry.isIntersecting
-                ) {
+                if (entry.isIntersecting) {
 
-                    entry.target.style.opacity =
-                        "1";
+                    entry.target.classList.add(
+                        "visible"
+                    );
 
-                    entry.target.style.transform =
-                        "translateY(0)";
-
-                    observer.unobserve(
+                    revealObserver.unobserve(
                         entry.target
                     );
 
@@ -1068,24 +837,94 @@ const observer =
             });
 
         },
-
         {
             threshold: 0.12
         }
-
     );
 
 
-revealElements.forEach(element => {
+revealElements.forEach(
+    element => {
 
-    element.style.opacity = "0";
+        revealObserver.observe(
+            element
+        );
 
-    element.style.transform =
-        "translateY(25px)";
+    }
+);
 
-    element.style.transition =
-        "opacity 0.7s ease, transform 0.7s ease";
 
-    observer.observe(element);
+/* =========================================================
+   LANGUAGE SELECT
+   ========================================================= */
 
-});
+const languageSelect =
+    document.getElementById(
+        "languageSelect"
+    );
+
+
+if (languageSelect) {
+
+    languageSelect.addEventListener(
+        "change",
+        event => {
+
+            changeLanguage(
+                event.target.value
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   INITIALIZE
+   ========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        /* Year */
+
+        const year =
+            document.getElementById(
+                "year"
+            );
+
+        if (year) {
+
+            year.textContent =
+                new Date().getFullYear();
+
+        }
+
+
+        /* Saved language */
+
+        const savedLanguage =
+            localStorage.getItem(
+                "preferredLanguage"
+            );
+
+
+        if (
+            savedLanguage &&
+            translations[savedLanguage]
+        ) {
+
+            changeLanguage(
+                savedLanguage
+            );
+
+        } else {
+
+            changeLanguage("ar");
+
+        }
+
+    }
+);
