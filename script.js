@@ -4,9 +4,9 @@
 
 const translations = {
 
-    /* =========================
+    /* =====================================================
        ARABIC
-       ========================= */
+       ===================================================== */
 
     ar: {
 
@@ -29,7 +29,7 @@ const translations = {
             "المسيرة الأكاديمية",
 
         nav_research:
-            "الملفات الأكاديمية",
+            "الأبحاث",
 
         nav_contact:
             "التواصل",
@@ -119,25 +119,22 @@ const translations = {
             "الاهتمام بالبحث العلمي والنشر الأكاديمي في المجالات المالية والمصرفية.",
 
 
-        /* ACADEMIC PROFILES */
+        /* RESEARCH */
 
-        profiles_label:
-            "ACADEMIC PROFILES",
+        research_label:
+            "RESEARCH",
 
-        profiles_heading:
-            "الملفات الأكاديمية",
+        research_title:
+            "الأبحاث والملفات العلمية",
 
-        profiles_desc:
-            "الوصول إلى الملفات والصفحات الأكاديمية الرسمية.",
+        researchgate_desc:
+            "الأبحاث والمنشورات العلمية والتعاونات الأكاديمية.",
+
+        scopus_desc:
+            "الملف البحثي ومعرّف الباحث وقاعدة البيانات العلمية.",
 
         scholar_desc:
             "الملف الأكاديمي والأبحاث والاستشهادات العلمية.",
-
-        scopus_desc:
-            "الملف البحثي ومعرّف الباحث في قاعدة Scopus.",
-
-        researchgate_desc:
-            "الأبحاث والمنشورات والتعاونات العلمية.",
 
         visit_profile:
             "زيارة الملف",
@@ -172,9 +169,9 @@ const translations = {
     },
 
 
-    /* =========================
+    /* =====================================================
        ENGLISH
-       ========================= */
+       ===================================================== */
 
     en: {
 
@@ -197,7 +194,7 @@ const translations = {
             "Academic Journey",
 
         nav_research:
-            "Academic Profiles",
+            "Research",
 
         nav_contact:
             "Contact",
@@ -287,25 +284,22 @@ const translations = {
             "Academic research and scholarly publication in finance and banking.",
 
 
-        /* ACADEMIC PROFILES */
+        /* RESEARCH */
 
-        profiles_label:
-            "ACADEMIC PROFILES",
+        research_label:
+            "RESEARCH",
 
-        profiles_heading:
-            "Academic Profiles",
-
-        profiles_desc:
-            "Access the official academic profiles and research pages.",
-
-        scholar_desc:
-            "Academic profile, publications and citation records.",
-
-        scopus_desc:
-            "Research profile and author identifier on Scopus.",
+        research_title:
+            "Research & Academic Profiles",
 
         researchgate_desc:
             "Research publications and academic collaborations.",
+
+        scopus_desc:
+            "Research profile, author identifier and indexed publications.",
+
+        scholar_desc:
+            "Academic profile, publications and citation records.",
 
         visit_profile:
             "Visit Profile",
@@ -340,9 +334,9 @@ const translations = {
     },
 
 
-    /* =========================
+    /* =====================================================
        CHINESE
-       ========================= */
+       ===================================================== */
 
     zh: {
 
@@ -365,7 +359,7 @@ const translations = {
             "学术经历",
 
         nav_research:
-            "学术档案",
+            "研究",
 
         nav_contact:
             "联系方式",
@@ -455,25 +449,22 @@ const translations = {
             "从事金融与银行领域的科学研究和学术出版。",
 
 
-        /* ACADEMIC PROFILES */
+        /* RESEARCH */
 
-        profiles_label:
-            "ACADEMIC PROFILES",
+        research_label:
+            "RESEARCH",
 
-        profiles_heading:
-            "学术档案",
-
-        profiles_desc:
-            "访问官方学术档案和研究页面。",
-
-        scholar_desc:
-            "学术档案、研究成果和引用记录。",
-
-        scopus_desc:
-            "Scopus 中的研究档案和作者标识。",
+        research_title:
+            "研究与学术档案",
 
         researchgate_desc:
             "研究成果、学术出版物和合作信息。",
+
+        scopus_desc:
+            "研究档案、作者标识和数据库收录成果。",
+
+        scholar_desc:
+            "学术档案、研究成果和引用记录。",
 
         visit_profile:
             "访问档案",
@@ -520,26 +511,34 @@ function changeLanguage(lang) {
         lang = "ar";
     }
 
-    const dictionary = translations[lang];
+    const dictionary =
+        translations[lang];
 
-    const html = document.documentElement;
+    const html =
+        document.documentElement;
+
 
     /* Language */
 
     html.lang = lang;
 
+
     /* Direction */
 
-    html.dir = lang === "ar" ? "rtl" : "ltr";
+    html.dir =
+        lang === "ar"
+            ? "rtl"
+            : "ltr";
 
 
-    /* Text */
+    /* Translate */
 
     document
         .querySelectorAll("[data-i18n]")
         .forEach(element => {
 
-            const key = element.dataset.i18n;
+            const key =
+                element.dataset.i18n;
 
             if (
                 dictionary[key] !== undefined
@@ -553,7 +552,7 @@ function changeLanguage(lang) {
         });
 
 
-    /* Title */
+    /* Page title */
 
     if (dictionary.page_title) {
 
@@ -571,16 +570,16 @@ function changeLanguage(lang) {
     );
 
 
-    /* Update select */
+    /* Select */
 
-    const languageSelect =
+    const select =
         document.getElementById(
             "languageSelect"
         );
 
-    if (languageSelect) {
+    if (select) {
 
-        languageSelect.value = lang;
+        select.value = lang;
 
     }
 
@@ -601,15 +600,20 @@ function updateHeader() {
 
     if (window.scrollY > 40) {
 
-        header.classList.add("scrolled");
+        header.classList.add(
+            "scrolled"
+        );
 
     } else {
 
-        header.classList.remove("scrolled");
+        header.classList.remove(
+            "scrolled"
+        );
 
     }
 
 }
+
 
 window.addEventListener(
     "scroll",
@@ -638,7 +642,9 @@ if (menuBtn && nav) {
         () => {
 
             const isOpen =
-                nav.classList.toggle("open");
+                nav.classList.toggle(
+                    "open"
+                );
 
             menuBtn.classList.toggle(
                 "open",
@@ -654,9 +660,8 @@ if (menuBtn && nav) {
     );
 
 
-    /* Close menu after click */
-
-    nav.querySelectorAll("a")
+    nav
+        .querySelectorAll("a")
         .forEach(link => {
 
             link.addEventListener(
@@ -714,12 +719,15 @@ function updateActiveNav() {
             section.offsetHeight;
 
         const id =
-            section.getAttribute("id");
+            section.getAttribute(
+                "id"
+            );
 
 
         if (
             scrollPosition >= top &&
-            scrollPosition < top + height
+            scrollPosition <
+                top + height
         ) {
 
             navLinks.forEach(link => {
@@ -727,6 +735,7 @@ function updateActiveNav() {
                 link.classList.remove(
                     "active"
                 );
+
 
                 if (
                     link.dataset.section === id
@@ -822,7 +831,9 @@ const revealObserver =
 
             entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
+                if (
+                    entry.isIntersecting
+                ) {
 
                     entry.target.classList.add(
                         "visible"
@@ -855,7 +866,7 @@ revealElements.forEach(
 
 
 /* =========================================================
-   LANGUAGE SELECT
+   LANGUAGE
    ========================================================= */
 
 const languageSelect =
@@ -881,14 +892,14 @@ if (languageSelect) {
 
 
 /* =========================================================
-   INITIALIZE
+   INITIALIZATION
    ========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
     () => {
 
-        /* Year */
+        /* Current year */
 
         const year =
             document.getElementById(
@@ -898,7 +909,8 @@ document.addEventListener(
         if (year) {
 
             year.textContent =
-                new Date().getFullYear();
+                new Date()
+                    .getFullYear();
 
         }
 
