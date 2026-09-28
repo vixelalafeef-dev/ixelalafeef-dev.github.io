@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>الأستاذ الدكتور محمد عبد المحسن العفيف | Professor Mohammad Al-Afeef</title>
+    <title data-i18n="page_title">
+        الأستاذ الدكتور محمد عبد المحسن العفيف | Professor Mohammad Al-Afeef
+    </title>
 
-    <meta name="description"
-          content="الموقع الأكاديمي للأستاذ الدكتور محمد عبد المحسن العفيف، أستاذ العلوم المالية والمصرفية في جامعة جرش - الأردن.">
+    <meta
+        name="description"
+        content="الموقع الأكاديمي للأستاذ الدكتور محمد عبد المحسن العفيف، أستاذ العلوم المالية والمصرفية في جامعة جرش - الأردن."
+    >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
 
 <!-- ================= HEADER ================= -->
 
@@ -27,34 +39,108 @@
     <div class="container nav-container">
 
         <a href="#home" class="logo">
-            <span class="logo-mark">MA</span>
+
+            <span class="logo-mark">
+                MA
+            </span>
 
             <span class="logo-text">
-                <strong>د. محمد العفيف</strong>
-                <small>Professor of Finance</small>
+
+                <strong data-i18n="logo_name">
+                    د. محمد العفيف
+                </strong>
+
+                <small data-i18n="logo_title">
+                    Professor of Finance
+                </small>
+
             </span>
+
         </a>
+
 
         <nav class="nav" id="nav">
 
-            <a href="#home" class="active">الرئيسية</a>
-            <a href="#about">نبذة</a>
-            <a href="#academic">المسيرة الأكاديمية</a>
-            <a href="#research">الأبحاث</a>
-            <a href="#contact">التواصل</a>
+            <a
+                href="#home"
+                class="active"
+                data-i18n="nav_home"
+            >
+                الرئيسية
+            </a>
+
+            <a
+                href="#about"
+                data-i18n="nav_about"
+            >
+                نبذة
+            </a>
+
+            <a
+                href="#academic"
+                data-i18n="nav_academic"
+            >
+                المسيرة الأكاديمية
+            </a>
+
+            <a
+                href="#research"
+                data-i18n="nav_research"
+            >
+                الأبحاث
+            </a>
+
+            <a
+                href="#contact"
+                data-i18n="nav_contact"
+            >
+                التواصل
+            </a>
 
         </nav>
 
+
         <div class="nav-actions">
 
-            <button class="language-btn" id="languageBtn">
-                EN
-            </button>
+            <!-- LANGUAGE SELECTOR -->
 
-            <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">
+            <div class="language-selector">
+
+                <select
+                    id="languageSelect"
+                    class="language-select"
+                    aria-label="Language Select"
+                >
+
+                    <option value="ar">
+                        العربية 🇸🇦
+                    </option>
+
+                    <option value="en">
+                        English 🇬🇧
+                    </option>
+
+                    <option value="zh">
+                        中文 🇨🇳
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="فتح القائمة"
+            >
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
 
         </div>
@@ -62,6 +148,7 @@
     </div>
 
 </header>
+
 
 
 <!-- ================= HERO ================= -->
@@ -72,35 +159,70 @@
 
     <div class="container hero-container">
 
+
         <div class="hero-content">
 
-            <span class="eyebrow">
+            <span
+                class="eyebrow"
+                data-i18n="hero_eyebrow"
+            >
                 جامعة جرش — الأردن
             </span>
 
+
             <h1>
-                الأستاذ الدكتور
-                <span>محمد عبد المحسن العفيف</span>
+
+                <span
+                    class="hero-title-first"
+                    data-i18n="hero_title_p1"
+                >
+                    الأستاذ الدكتور
+                </span>
+
+                <span
+                    data-i18n="hero_title_p2"
+                >
+                    محمد عبد المحسن العفيف
+                </span>
+
             </h1>
 
-            <h2>
+
+            <h2 data-i18n="hero_subtitle">
                 أستاذ العلوم المالية والمصرفية
             </h2>
 
-            <p>
+
+            <p data-i18n="hero_desc">
                 Professor of Finance and Banking
                 <br>
                 Jerash University — Jordan
             </p>
 
+
             <div class="hero-buttons">
 
-                <a href="#about" class="btn btn-primary">
-                    تعرف على الأستاذ
-                    <span>←</span>
+                <a
+                    href="#about"
+                    class="btn btn-primary"
+                >
+
+                    <span data-i18n="hero_btn_about">
+                        تعرف على الأستاذ
+                    </span>
+
+                    <span>
+                        ←
+                    </span>
+
                 </a>
 
-                <a href="#contact" class="btn btn-outline">
+
+                <a
+                    href="#contact"
+                    class="btn btn-outline"
+                    data-i18n="hero_btn_contact"
+                >
                     تواصل معي
                 </a>
 
@@ -108,28 +230,44 @@
 
         </div>
 
+
+
+        <!-- HERO CARD -->
+
         <div class="hero-card">
 
             <div class="academic-badge">
-                <span>MA</span>
+
+                <span>
+                    MA
+                </span>
+
             </div>
+
 
             <div class="hero-card-content">
 
-                <span>Professor</span>
+                <span data-i18n="hero_card_prof">
+                    Professor
+                </span>
 
-                <h3>
-                    Mohammad<br>
+
+                <h3 data-i18n="hero_card_name">
+                    Mohammad
+                    <br>
                     Al-Afeef
                 </h3>
 
+
                 <div class="card-line"></div>
 
-                <p>
+
+                <p data-i18n="hero_card_dept">
                     Finance & Banking
                 </p>
 
-                <p>
+
+                <p data-i18n="hero_card_univ">
                     Jerash University
                 </p>
 
@@ -142,89 +280,138 @@
 </section>
 
 
+
 <!-- ================= ABOUT ================= -->
 
-<section class="section about" id="about">
+<section
+    class="section about"
+    id="about"
+>
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <span class="section-number">01</span>
+            <span class="section-number">
+                01
+            </span>
+
 
             <div>
-                <span class="section-label">
+
+                <span
+                    class="section-label"
+                    data-i18n="about_label"
+                >
                     PROFILE
                 </span>
 
-                <h2>
+
+                <h2 data-i18n="about_heading">
                     نبذة أكاديمية
                 </h2>
+
             </div>
 
         </div>
 
 
+
         <div class="about-grid">
+
 
             <div class="about-text">
 
-                <p class="lead">
-                    الأستاذ الدكتور محمد عبد المحسن العفيف
-                    أستاذ في العلوم المالية والمصرفية في
-                    جامعة جرش — المملكة الأردنية الهاشمية.
+                <p
+                    class="lead"
+                    data-i18n="about_lead"
+                >
+                    الأستاذ الدكتور محمد عبد المحسن العفيف أستاذ في العلوم المالية والمصرفية في جامعة جرش — المملكة الأردنية الهاشمية.
                 </p>
 
-                <p>
-                    يتركز اهتمامه الأكاديمي والمهني في مجالات
-                    العلوم المالية والمصرفية، والتعليم الجامعي،
-                    والبحث العلمي في المجالات ذات الصلة.
+
+                <p data-i18n="about_p1">
+                    يتركز اهتمامه الأكاديمي والمهني في مجالات العلوم المالية والمصرفية، والتعليم الجامعي، والبحث العلمي في المجالات ذات الصلة.
                 </p>
 
-                <p>
-                    يهدف هذا الموقع إلى توفير مساحة أكاديمية
-                    للتعريف بالمسيرة العلمية والبحثية والتواصل
-                    الأكاديمي والمهني.
+
+                <p data-i18n="about_p2">
+                    يهدف هذا الموقع إلى توفير مساحة أكاديمية للتعريف بالمسيرة العلمية والبحثية والتواصل الأكاديمي والمهني.
                 </p>
 
             </div>
 
 
+
             <div class="about-info">
 
+
                 <div class="info-item">
-                    <span class="info-icon">01</span>
+
+                    <span class="info-icon">
+                        01
+                    </span>
+
 
                     <div>
-                        <small>المنصب الأكاديمي</small>
-                        <strong>
+
+                        <small data-i18n="info_01_label">
+                            المنصب الأكاديمي
+                        </small>
+
+                        <strong data-i18n="info_01_val">
                             أستاذ العلوم المالية والمصرفية
                         </strong>
+
                     </div>
+
                 </div>
 
 
+
                 <div class="info-item">
-                    <span class="info-icon">02</span>
+
+                    <span class="info-icon">
+                        02
+                    </span>
+
 
                     <div>
-                        <small>الجامعة</small>
-                        <strong>
+
+                        <small data-i18n="info_02_label">
+                            الجامعة
+                        </small>
+
+                        <strong data-i18n="info_02_val">
                             جامعة جرش — الأردن
                         </strong>
+
                     </div>
+
                 </div>
 
 
+
                 <div class="info-item">
-                    <span class="info-icon">03</span>
+
+                    <span class="info-icon">
+                        03
+                    </span>
+
 
                     <div>
-                        <small>التخصص</small>
-                        <strong>
+
+                        <small data-i18n="info_03_label">
+                            التخصص
+                        </small>
+
+                        <strong data-i18n="info_03_val">
                             العلوم المالية والمصرفية
                         </strong>
+
                     </div>
+
                 </div>
 
             </div>
@@ -236,30 +423,42 @@
 </section>
 
 
+
 <!-- ================= ACADEMIC ================= -->
 
-<section class="section academic" id="academic">
+<section
+    class="section academic"
+    id="academic"
+>
 
     <div class="container">
 
+
         <div class="section-heading centered">
 
-            <span class="section-label">
+            <span
+                class="section-label"
+                data-i18n="academic_label"
+            >
                 ACADEMIC JOURNEY
             </span>
 
-            <h2>
+
+            <h2 data-i18n="academic_heading">
                 المسيرة الأكاديمية
             </h2>
 
-            <p>
+
+            <p data-i18n="academic_sub">
                 معلومات أكاديمية ومهنية
             </p>
 
         </div>
 
 
+
         <div class="academic-grid">
+
 
             <div class="academic-card">
 
@@ -267,16 +466,18 @@
                     🎓
                 </div>
 
-                <h3>
+
+                <h3 data-i18n="acad_card_1_title">
                     الأستاذية
                 </h3>
 
-                <p>
-                    أستاذ العلوم المالية والمصرفية
-                    في جامعة جرش — الأردن.
+
+                <p data-i18n="acad_card_1_desc">
+                    أستاذ العلوم المالية والمصرفية في جامعة جرش — الأردن.
                 </p>
 
             </div>
+
 
 
             <div class="academic-card">
@@ -285,16 +486,18 @@
                     📊
                 </div>
 
-                <h3>
+
+                <h3 data-i18n="acad_card_2_title">
                     التخصص
                 </h3>
 
-                <p>
-                    العلوم المالية والمصرفية
-                    ومجالاتها الأكاديمية والبحثية.
+
+                <p data-i18n="acad_card_2_desc">
+                    العلوم المالية والمصرفية ومجالاتها الأكاديمية والبحثية.
                 </p>
 
             </div>
+
 
 
             <div class="academic-card">
@@ -303,13 +506,14 @@
                     📚
                 </div>
 
-                <h3>
+
+                <h3 data-i18n="acad_card_3_title">
                     البحث العلمي
                 </h3>
 
-                <p>
-                    الاهتمام بالبحث العلمي والدراسات
-                    المرتبطة بالقطاع المالي والمصرفي.
+
+                <p data-i18n="acad_card_3_desc">
+                    الاهتمام بالبحث العلمي والدراسات المرتبطة بالقطاع المالي والمصرفي.
                 </p>
 
             </div>
@@ -321,23 +525,35 @@
 </section>
 
 
+
 <!-- ================= RESEARCH ================= -->
 
-<section class="section research" id="research">
+<section
+    class="section research"
+    id="research"
+>
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <span class="section-number">02</span>
+            <span class="section-number">
+                02
+            </span>
+
 
             <div>
 
-                <span class="section-label">
+                <span
+                    class="section-label"
+                    data-i18n="research_label"
+                >
                     RESEARCH
                 </span>
 
-                <h2>
+
+                <h2 data-i18n="research_heading">
                     الاهتمامات البحثية
                 </h2>
 
@@ -346,53 +562,66 @@
         </div>
 
 
-        <!-- Research Interests -->
+
+        <!-- RESEARCH INTERESTS -->
 
         <div class="research-grid">
 
+
             <div class="research-card">
 
-                <span>01</span>
+                <span class="paper-number">
+                    01
+                </span>
 
-                <h3>
+
+                <h3 data-i18n="research_card_1_title">
                     العلوم المالية
                 </h3>
 
-                <p>
-                    الدراسات والمفاهيم المتعلقة
-                    بالتمويل والأسواق المالية.
+
+                <p data-i18n="research_card_1_desc">
+                    الدراسات والمفاهيم المتعلقة بالتمويل والأسواق المالية.
                 </p>
 
             </div>
 
 
+
             <div class="research-card">
 
-                <span>02</span>
+                <span class="paper-number">
+                    02
+                </span>
 
-                <h3>
+
+                <h3 data-i18n="research_card_2_title">
                     العلوم المصرفية
                 </h3>
 
-                <p>
-                    الموضوعات والدراسات المتعلقة
-                    بالمؤسسات والعمليات المصرفية.
+
+                <p data-i18n="research_card_2_desc">
+                    الموضوعات والدراسات المتعلقة بالمؤسسات والعمليات المصرفية.
                 </p>
 
             </div>
 
 
+
             <div class="research-card">
 
-                <span>03</span>
+                <span class="paper-number">
+                    03
+                </span>
 
-                <h3>
+
+                <h3 data-i18n="research_card_3_title">
                     التعليم الجامعي
                 </h3>
 
-                <p>
-                    التعليم الأكاديمي وتطوير المعرفة
-                    في المجالات المالية والمصرفية.
+
+                <p data-i18n="research_card_3_desc">
+                    التعليم الأكاديمي وتطوير المعرفة في المجالات المالية والمصرفية.
                 </p>
 
             </div>
@@ -400,32 +629,39 @@
         </div>
 
 
+
         <!-- ================= ACADEMIC PROFILES ================= -->
 
         <div class="academic-profiles">
 
+
             <div class="profiles-heading">
 
-                <span class="section-label">
+                <span
+                    class="section-label"
+                    data-i18n="profiles_label"
+                >
                     ACADEMIC PROFILES
                 </span>
 
-                <h3>
+
+                <h3 data-i18n="profiles_heading">
                     الملفات الأكاديمية
                 </h3>
 
-                <p>
-                    للاطلاع على المنشورات العلمية
-                    والإنتاج البحثي والاستشهادات الأكاديمية.
+
+                <p data-i18n="profiles_desc">
+                    للاطلاع على المنشورات العلمية والإنتاج البحثي والاستشهادات الأكاديمية.
                 </p>
 
             </div>
 
 
+
             <div class="profiles-grid">
 
 
-                <!-- Google Scholar -->
+                <!-- GOOGLE SCHOLAR -->
 
                 <a
                     href="https://scholar.google.com/citations?hl=ar&user=AiU_3IcAAAAJ"
@@ -437,6 +673,7 @@
                     <div class="profile-icon scholar-icon">
                         G
                     </div>
+
 
                     <div class="profile-content">
 
@@ -452,12 +689,16 @@
 
                         </div>
 
-                        <p>
-                            المنشورات العلمية والاستشهادات
-                            والملف الأكاديمي.
+
+                        <p data-i18n="scholar_desc">
+                            المنشورات العلمية والاستشهادات والملف الأكاديمي.
                         </p>
 
-                        <span class="profile-link">
+
+                        <span
+                            class="profile-link"
+                            data-i18n="scholar_link"
+                        >
                             عرض الملف الأكاديمي
                         </span>
 
@@ -466,7 +707,8 @@
                 </a>
 
 
-                <!-- Scopus -->
+
+                <!-- SCOPUS -->
 
                 <a
                     href="https://www.scopus.com/authid/detail.uri?authorId=57216248243"
@@ -478,6 +720,7 @@
                     <div class="profile-icon scopus-icon">
                         S
                     </div>
+
 
                     <div class="profile-content">
 
@@ -493,12 +736,16 @@
 
                         </div>
 
-                        <p>
-                            ملف الباحث والمنشورات
-                            ومؤشرات الاستشهاد.
+
+                        <p data-i18n="scopus_desc">
+                            ملف الباحث والمنشورات ومؤشرات الاستشهاد.
                         </p>
 
-                        <span class="profile-link">
+
+                        <span
+                            class="profile-link"
+                            data-i18n="scopus_link"
+                        >
                             عرض ملف الباحث
                         </span>
 
@@ -507,7 +754,8 @@
                 </a>
 
 
-                <!-- ResearchGate -->
+
+                <!-- RESEARCHGATE -->
 
                 <a
                     href="https://www.researchgate.net/profile/Mohammad-Al-Afeef"
@@ -519,6 +767,7 @@
                     <div class="profile-icon researchgate-icon">
                         RG
                     </div>
+
 
                     <div class="profile-content">
 
@@ -534,12 +783,16 @@
 
                         </div>
 
-                        <p>
-                            الأبحاث والمنشورات والتواصل
-                            مع المجتمع الأكاديمي.
+
+                        <p data-i18n="researchgate_desc">
+                            الأبحاث والمنشورات والتواصل مع المجتمع الأكاديمي.
                         </p>
 
-                        <span class="profile-link">
+
+                        <span
+                            class="profile-link"
+                            data-i18n="researchgate_link"
+                        >
                             عرض الملف البحثي
                         </span>
 
@@ -557,77 +810,116 @@
 </section>
 
 
+
 <!-- ================= CONTACT ================= -->
 
-<section class="section contact" id="contact">
+<section
+    class="section contact"
+    id="contact"
+>
 
     <div class="container">
 
+
         <div class="contact-wrapper">
+
 
             <div class="contact-content">
 
-                <span class="section-label">
+                <span
+                    class="section-label"
+                    data-i18n="contact_label"
+                >
                     CONTACT
                 </span>
 
-                <h2>
+
+                <h2 data-i18n="contact_heading">
                     للتواصل الأكاديمي
                 </h2>
 
-                <p>
-                    للتواصل الأكاديمي والمهني،
-                    يمكن استخدام بيانات الاتصال التالية.
+
+                <p data-i18n="contact_desc">
+                    للتواصل الأكاديمي والمهني، يمكن استخدام بيانات الاتصال التالية.
                 </p>
+
 
 
                 <div class="contact-list">
 
-                    <a href="tel:+962777673087" class="contact-item">
+
+                    <a
+                        href="tel:+962777673087"
+                        class="contact-item"
+                    >
 
                         <span class="contact-icon">
                             ☎
                         </span>
 
+
                         <div>
-                            <small>الهاتف</small>
+
+                            <small data-i18n="phone_label">
+                                الهاتف
+                            </small>
+
                             <strong>
                                 +962 7 7767 3087
                             </strong>
+
                         </div>
 
                     </a>
 
 
-                    <a href="mailto:dr.mohammad@jpu.edu.jo"
-                       class="contact-item">
+
+                    <a
+                        href="mailto:dr.mohammad@jpu.edu.jo"
+                        class="contact-item"
+                    >
 
                         <span class="contact-icon">
                             @
                         </span>
 
+
                         <div>
-                            <small>البريد الجامعي</small>
+
+                            <small data-i18n="univ_email_label">
+                                البريد الجامعي
+                            </small>
+
                             <strong>
                                 dr.mohammad@jpu.edu.jo
                             </strong>
+
                         </div>
 
                     </a>
 
 
-                    <a href="mailto:afeif500@yahoo.com"
-                       class="contact-item">
+
+                    <a
+                        href="mailto:afeif500@yahoo.com"
+                        class="contact-item"
+                    >
 
                         <span class="contact-icon">
                             @
                         </span>
 
+
                         <div>
-                            <small>البريد الإلكتروني</small>
+
+                            <small data-i18n="pers_email_label">
+                                البريد الإلكتروني
+                            </small>
+
                             <strong>
                                 afeif500@yahoo.com
                             </strong>
+
                         </div>
 
                     </a>
@@ -637,6 +929,9 @@
             </div>
 
 
+
+            <!-- CONTACT CARD -->
+
             <div class="contact-box">
 
                 <div class="contact-box-inner">
@@ -645,21 +940,25 @@
                         PROFESSOR
                     </span>
 
-                    <h3>
+
+                    <h3 data-i18n="contact_box_title">
                         Mohammad
                         <br>
                         Al-Afeef
                     </h3>
 
-                    <p>
+
+                    <p data-i18n="contact_box_prof">
                         Professor of Finance
                         <br>
                         Jerash University
                     </p>
 
+
                     <div class="gold-line"></div>
 
-                    <span>
+
+                    <span data-i18n="contact_box_country">
                         Jordan
                     </span>
 
@@ -674,30 +973,41 @@
 </section>
 
 
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="footer">
 
     <div class="container footer-container">
 
+
         <div>
-            <strong>
+
+            <strong data-i18n="footer_name">
                 د. محمد عبد المحسن العفيف
             </strong>
+
 
             <p>
                 Professor of Finance and Banking
             </p>
+
         </div>
+
 
         <div class="footer-right">
 
             <span>
-                © <span id="year"></span>
+
+                ©
+                <span id="year"></span>
+
                 Mohammad Al-Afeef
+
             </span>
 
-            <span>
+
+            <span data-i18n="footer_univ">
                 Jerash University — Jordan
             </span>
 
@@ -708,14 +1018,21 @@
 </footer>
 
 
+
 <!-- ================= BACK TO TOP ================= -->
 
-<button class="back-top" id="backTop">
+<button
+    class="back-top"
+    id="backTop"
+    aria-label="Back to top"
+>
     ↑
 </button>
+
 
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
